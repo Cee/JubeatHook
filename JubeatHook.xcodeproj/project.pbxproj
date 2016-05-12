@@ -1,0 +1,335 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		929B36181CE3891B00CB8DBE /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929B36171CE3891B00CB8DBE /* Foundation.framework */; };
+		929B361A1CE3891B00CB8DBE /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 929B36191CE3891B00CB8DBE /* UIKit.framework */; };
+		929B36311CE3896A00CB8DBE /* CaptainHook.h in Headers */ = {isa = PBXBuildFile; fileRef = 929B362F1CE3896A00CB8DBE /* CaptainHook.h */; };
+		929B36321CE3896A00CB8DBE /* JubeatHook.mm in Sources */ = {isa = PBXBuildFile; fileRef = 929B36301CE3896A00CB8DBE /* JubeatHook.mm */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		929B36141CE3891B00CB8DBE /* libJubeatHook.dylib */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.dylib"; includeInIndex = 0; path = libJubeatHook.dylib; sourceTree = BUILT_PRODUCTS_DIR; };
+		929B36171CE3891B00CB8DBE /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		929B36191CE3891B00CB8DBE /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		929B361E1CE3891B00CB8DBE /* control.txt */ = {isa = PBXFileReference; lastKnownFileType = text; name = control.txt; path = Package/DEBIAN/control.txt; sourceTree = "<group>"; };
+		929B361F1CE3891B00CB8DBE /* control */ = {isa = PBXFileReference; lastKnownFileType = text; name = control; path = Package/DEBIAN/control; sourceTree = "<group>"; };
+		929B36211CE3891B00CB8DBE /* PackageVersion.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = PackageVersion.plist; sourceTree = "<group>"; };
+		929B36221CE3891B00CB8DBE /* JubeatHook-Prefix.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "JubeatHook-Prefix.pch"; sourceTree = "<group>"; };
+		929B36291CE3891B00CB8DBE /* 0xdeadfa11 */ = {isa = PBXFileReference; lastKnownFileType = text; name = 0xdeadfa11; path = Package/usr/lib/0xdeadfa11; sourceTree = "<group>"; };
+		929B362F1CE3896A00CB8DBE /* CaptainHook.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = CaptainHook.h; sourceTree = "<group>"; };
+		929B36301CE3896A00CB8DBE /* JubeatHook.mm */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.objcpp; path = JubeatHook.mm; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		929B36101CE3891B00CB8DBE /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929B36181CE3891B00CB8DBE /* Foundation.framework in Frameworks */,
+				929B361A1CE3891B00CB8DBE /* UIKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		929B360A1CE3891B00CB8DBE = {
+			isa = PBXGroup;
+			children = (
+				929B361B1CE3891B00CB8DBE /* JubeatHook */,
+				929B36161CE3891B00CB8DBE /* Frameworks */,
+				929B36151CE3891B00CB8DBE /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		929B36151CE3891B00CB8DBE /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				929B36141CE3891B00CB8DBE /* libJubeatHook.dylib */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		929B36161CE3891B00CB8DBE /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				929B36171CE3891B00CB8DBE /* Foundation.framework */,
+				929B36191CE3891B00CB8DBE /* UIKit.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		929B361B1CE3891B00CB8DBE /* JubeatHook */ = {
+			isa = PBXGroup;
+			children = (
+				929B362F1CE3896A00CB8DBE /* CaptainHook.h */,
+				929B36301CE3896A00CB8DBE /* JubeatHook.mm */,
+				929B361C1CE3891B00CB8DBE /* Package */,
+				929B36201CE3891B00CB8DBE /* Supporting Files */,
+			);
+			path = JubeatHook;
+			sourceTree = "<group>";
+		};
+		929B361C1CE3891B00CB8DBE /* Package */ = {
+			isa = PBXGroup;
+			children = (
+				929B361D1CE3891B00CB8DBE /* DEBIAN */,
+				929B36271CE3891B00CB8DBE /* usr */,
+			);
+			name = Package;
+			sourceTree = "<group>";
+		};
+		929B361D1CE3891B00CB8DBE /* DEBIAN */ = {
+			isa = PBXGroup;
+			children = (
+				929B361E1CE3891B00CB8DBE /* control.txt */,
+				929B361F1CE3891B00CB8DBE /* control */,
+			);
+			name = DEBIAN;
+			sourceTree = "<group>";
+		};
+		929B36201CE3891B00CB8DBE /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				929B36211CE3891B00CB8DBE /* PackageVersion.plist */,
+				929B36221CE3891B00CB8DBE /* JubeatHook-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		929B36271CE3891B00CB8DBE /* usr */ = {
+			isa = PBXGroup;
+			children = (
+				929B36281CE3891B00CB8DBE /* lib */,
+			);
+			name = usr;
+			sourceTree = "<group>";
+		};
+		929B36281CE3891B00CB8DBE /* lib */ = {
+			isa = PBXGroup;
+			children = (
+				929B36291CE3891B00CB8DBE /* 0xdeadfa11 */,
+			);
+			name = lib;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		929B36111CE3891B00CB8DBE /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929B36311CE3896A00CB8DBE /* CaptainHook.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		929B36131CE3891B00CB8DBE /* JubeatHook */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 929B362C1CE3891B00CB8DBE /* Build configuration list for PBXNativeTarget "JubeatHook" */;
+			buildPhases = (
+				929B360F1CE3891B00CB8DBE /* Sources */,
+				929B36101CE3891B00CB8DBE /* Frameworks */,
+				929B36111CE3891B00CB8DBE /* Headers */,
+				929B36121CE3891B00CB8DBE /* ShellScript */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = JubeatHook;
+			productName = JubeatHook;
+			productReference = 929B36141CE3891B00CB8DBE /* libJubeatHook.dylib */;
+			productType = "com.apple.product-type.library.dynamic";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		929B360B1CE3891B00CB8DBE /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				TargetAttributes = {
+					929B36131CE3891B00CB8DBE = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = 929B360E1CE3891B00CB8DBE /* Build configuration list for PBXProject "JubeatHook" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 929B360A1CE3891B00CB8DBE;
+			productRefGroup = 929B36151CE3891B00CB8DBE /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				929B36131CE3891B00CB8DBE /* JubeatHook */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		929B36121CE3891B00CB8DBE /* ShellScript */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "/opt/iOSOpenDev/bin/iosod --xcbp";
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		929B360F1CE3891B00CB8DBE /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				929B36321CE3896A00CB8DBE /* JubeatHook.mm in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		929B362A1CE3891B00CB8DBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = NO;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				OTHER_LDFLAGS = "-Wl,-segalign,4000";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = NO;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Debug;
+		};
+		929B362B1CE3891B00CB8DBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				COPY_PHASE_STRIP = YES;
+				ENABLE_BITCODE = NO;
+				EXCLUDED_RECURSIVE_SEARCH_PATH_SUBDIRECTORIES = "*.nib *.lproj *.gch (*) .DS_Store CVS .svn .git .hg *.xcodeproj *.xcode *.pbproj *.pbxproj";
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(iOSOpenDevPath)/frameworks/**",
+					"$(SDKROOT)/System/Library/PrivateFrameworks",
+				);
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_MISSING_PROTOTYPES = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				HEADER_SEARCH_PATHS = "$(iOSOpenDevPath)/include/**";
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				LIBRARY_SEARCH_PATHS = "$(iOSOpenDevPath)/lib/**";
+				OTHER_LDFLAGS = "-Wl,-segalign,4000";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				iOSOpenDevPath = /opt/iOSOpenDev;
+			};
+			name = Release;
+		};
+		929B362D1CE3891B00CB8DBE /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JubeatHook/JubeatHook-Prefix.pch";
+				INSTALL_PATH = /usr/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Debug;
+		};
+		929B362E1CE3891B00CB8DBE /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				CODE_SIGN_IDENTITY = "";
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				EXECUTABLE_PREFIX = lib;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "JubeatHook/JubeatHook-Prefix.pch";
+				INSTALL_PATH = /usr/lib;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				iOSOpenDevBuildPackageOnAnyBuild = NO;
+				iOSOpenDevCopyOnBuild = NO;
+				iOSOpenDevDevice = "";
+				iOSOpenDevInstallOnAnyBuild = NO;
+				iOSOpenDevInstallOnProfiling = YES;
+				iOSOpenDevRespringOnInstall = YES;
+				iOSOpenDevUsePackageVersionPList = YES;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		929B360E1CE3891B00CB8DBE /* Build configuration list for PBXProject "JubeatHook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				929B362A1CE3891B00CB8DBE /* Debug */,
+				929B362B1CE3891B00CB8DBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		929B362C1CE3891B00CB8DBE /* Build configuration list for PBXNativeTarget "JubeatHook" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				929B362D1CE3891B00CB8DBE /* Debug */,
+				929B362E1CE3891B00CB8DBE /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 929B360B1CE3891B00CB8DBE /* Project object */;
+}
